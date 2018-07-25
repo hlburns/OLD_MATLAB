@@ -1,0 +1,30 @@
+List of matlab scripts
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAUTILUS RUNS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DIAGNOSTICS:
+
+EulTS.m: a function that produces a time series of max osf 
+        TS = ( Nyrs1, Nyrs5, start, stop)
+Eulplotter: Plots the stream function in normal y,z co-ordinates
+          Eulplotter(fname,options)
+MOCcalc.m: Calculates the max ofs (called by EulTS
+          Psimax = MOCcalc(Y,T,Psi)
+
+STATE_FILES:
+
+linearESODens.m: Calculates density from Temp field using linear equation of state
+                [Rho]=linearEOSDens(fname,section,plot)
+
+LAYERS_PKG:
+
+RSF2.m: Calculates the residual streamfunction in density and temperature co-ords from temp layers
+        Psi = RSF2(Fname)
+RSF3.m: Calculates the residual streamfunction in density co-ords from dens layers
+        Psi = RSF3(Fname)
+        ****NOTE***** THIS DOESN'T WORK WELL
+ResTS.m: Calculates a time series of max residual streamfunction
+        TS=ResTS(Nyrs1,Nyrs5,start,stop)
+
+HEAT_BUDGET (DIAGNOSTICS OUTPUT):
+
